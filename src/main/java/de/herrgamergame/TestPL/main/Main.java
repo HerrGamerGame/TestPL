@@ -1,12 +1,13 @@
-package de.herrgamergame.main;
+package de.herrgamergame.TestPL.main;
 
-import de.herrgamergame.cmds.LebenCheck;
+import de.herrgamergame.TestPL.cmds.LebenCheck;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 
     public static Main instance;
-    public String pr = "§aTest";
+    public String pr = "§aTest ";
+    public String noperm = "§cDafür hast du keine Rechte";
 
     public void onEnable(){
         instance = this;
@@ -17,7 +18,7 @@ public class Main extends JavaPlugin {
         System.out.println("Maven Test Offline");
     }
 
-    public void register(){
+    private void register(){
         //CMD
         getCommand("leben").setExecutor(new LebenCheck());
 

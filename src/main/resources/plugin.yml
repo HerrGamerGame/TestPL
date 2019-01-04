@@ -1,7 +1,7 @@
 name: TestPL
 author: HerrGamerGame
 version: 1.0
-main: de.herrgamergame.main.Main
+main: de.herrgamergame.TestPL.main.Main
 commands:
   leben:
     description:
