@@ -8,7 +8,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class LebenCheck implements CommandExecutor {
+public class Leben implements CommandExecutor {
 
 
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
