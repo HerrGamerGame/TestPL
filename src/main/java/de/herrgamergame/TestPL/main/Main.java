@@ -1,6 +1,7 @@
 package de.herrgamergame.TestPL.main;
 
 import de.herrgamergame.TestPL.cmds.Leben;
+import de.herrgamergame.TestPL.events.BowHit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -23,6 +24,8 @@ public class Main extends JavaPlugin {
         getCommand("leben").setExecutor(new Leben());
 
         //EVENT
+        this.getServer().getPluginManager().registerEvents(new BowHit(),this);
+
     }
 
 
